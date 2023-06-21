@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="styles.css">
   <script src="css/styles.css"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -57,8 +58,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" style="color: rgb(0, 0, 0);" href="" >Comida</a>
-              </div>   
-
+                 
+              <li class="nav-item">
+                <button id="btn-aleatorio">Aleatorio</button>
               </li> 
             </ul>
           <button id="btn-aleatorio">Aleatorio</button>
@@ -92,13 +94,17 @@
           </div>
 
           <br><br>
+
+
           <div class="row" id="container_meals">
             <label id="nombre_comida"></label>
             <img id="imagenComida" src="" class="imagen">
+            <div>
               <h1>Instrucciones de preparación</h1>
               <label id="descripcion"></label> <br>
               <h1>Ingredientes</h1>
               <ul id="ingredientes_contenedor"></ul>
+            </div>
             <iframe id="video" width="420" height="315"
             src="">
             </iframe>

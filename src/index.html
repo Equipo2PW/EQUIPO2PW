@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="css/styles.css"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/bootstrap.bundle.min.js"></script>
-
+  
   <script type="text/javascript">
+
     function sendEmail() {
       Email.send({
         Host: "smtp.elasticemail.com",
@@ -35,14 +37,13 @@
     <div id="content-wrap">
       <header id="header">
         <nav id="navbar">
-          <a href="https://www.themealdb.com" id="logo-header">
+          <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgba(245, 78, 78, 0.925);">
+            <header class="container-fluid">
+              <a>
+                <a href="https://www.themealdb.com" id="logo-header">
             <img src="https://www.themealdb.com/images/logo-small.png" alt="logo-MealDb" />
           </a>
 
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgba(245, 78, 78, 0.925);">
-        <header class="container-fluid">
-          <a>
-            <img class="logo" src="img/TheMeal.png" height="60%" width="50%" /></a>
            <!-- Boton tipo hamburguesa -->
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -56,17 +57,17 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" style="color: rgb(0, 0, 0);" href="" >Comida</a>
-                 
-              <li class="nav-item">
-                <a class="nav-link" href=""><button>Aleatorio</button></a>
+              </div>   
 
               </li> 
             </ul>
-          </div>
+          <button id="btn-aleatorio">Aleatorio</button>
+          
         </div>
       </nav>
     </nav>
   </header>
+  
 
       <!-- BUSCADOR Y BOTON-->
       <br><br>
@@ -91,9 +92,17 @@
           </div>
 
           <br><br>
-
-
-
+          <div class="row" id="container_meals">
+            <label id="nombre_comida"></label>
+            <img id="imagenComida" src="" class="imagen">
+              <h1>Instrucciones de preparación</h1>
+              <label id="descripcion"></label> <br>
+              <h1>Ingredientes</h1>
+              <ul id="ingredientes_contenedor"></ul>
+            <iframe id="video" width="420" height="315"
+            src="">
+            </iframe>
+          </div>
 
           <div class="row">
             <div class="col p-3 bg-primary text-white" style="background-color: rgb(163, 231, 236) !important;">

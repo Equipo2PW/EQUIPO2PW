@@ -25,6 +25,9 @@
 .Kursiva {
     font-style: italic;
 }
-
+.imagen{
+    height: 250px !important;
+    width: 250px !important;
+}
 
 

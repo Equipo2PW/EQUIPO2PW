@@ -34,7 +34,7 @@ setTimeout(() => {
             ingredientes.removeChild(ingredientes.firstChild);
           }
 
-        ingredientes_contenedor.innerHTML = '';
+        ingredientes_contenedor.innerHTML = 'Ingredients';
 
         for(let i=1; i<20; i++){
             if(meal[`strIngredient${i}`]){

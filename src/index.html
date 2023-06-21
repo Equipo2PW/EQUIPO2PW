@@ -70,7 +70,6 @@
 
       <!-- BUSCADOR Y BOTON-->
       <br><br>
-
       <div class="centered-search">
         <div class="header-search">
           <div class="container mt-5">
@@ -78,17 +77,19 @@
               <h3>TIENES HAMBRE?</h3>
               <div class="contenedor-input">
                 <div class="input-group mb-3">
-                  <input type="text" name="search" id="inputSearch" class="form-control rounded-pill me-3"
-                    placeholder="Buscar una comida..." style="border: solid 3px #be1212"
+                  <input type="text" id="searchInput" placeholder="Buscar una comida..."
+                    class="form-control rounded-pill me-3" style="border: solid 3px #be1212"
                     aria-label="Recipient's username" aria-describedby="button-addon2" />
-                  <button type="submit" class="btn rounded-pill w-15 text-white" style="background-color: #be1212"
-                    id="get_meal_search">
-                    Search!
-                  </button>
+                  <button type="submit" class="btn rounded-pill w-15 text-white" style="background-color: #000000"
+                    id="searchButton">Buscar!!</button>
+
                 </div>
+                <div id="results"></div>
               </div>
             </div>
           </div>
+        </div>
+     
 
           <br><br>
 
@@ -97,9 +98,9 @@
             <label id="nombre_comida"></label>
             <img id="imagenComida" src="" class="imagen">
             <div>
-              <h1>Instrucciones de preparación</h1>
+              <h1></h1>
               <label id="descripcion"></label> <br>
-              <h1>Ingredientes</h1>
+              <h1></h1>
               <ul id="ingredientes_contenedor"></ul>
             </div>
             <iframe id="video" width="420" height="315"

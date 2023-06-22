@@ -36,7 +36,7 @@ setTimeout(() => {
 
         ingredientes_contenedor.innerHTML = 'Ingredients';
 
-        for(let i=1; i<20; i++){
+        for(let i = 1; i<= 20; i++){
             if(meal[`strIngredient${i}`]){
                 ingredientes.push(
                     `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
